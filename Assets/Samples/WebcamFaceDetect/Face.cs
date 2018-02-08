@@ -2,7 +2,7 @@
 using UnityEngine;
 using OpenCvSharp;
 
-public class Test : MonoBehaviour
+public class Face : MonoBehaviour
 {
     Texture2D t = null;
 
@@ -32,11 +32,6 @@ public class Test : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <param name="cascade"></param>
-    /// <returns></returns>
     private Mat DetectFace(CascadeClassifier cascade)
     {
         Mat result;
